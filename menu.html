@@ -1,0 +1,51 @@
+<!--
+文件说明：本文件是整体布局中左侧菜单源文件，在页面打开后自动加载，不可脱离框架运行。
+请严格按标准格式进行菜单的书写，菜单格式规则如下：
+1、li元素下，包含一个img元素和a元素，img为菜单图标<非必须>，a为菜单名称<必须>；
+2、当li元素属性包含 class="hide" 时，菜单列表不显示，但是会生成权限限制；
+3、当li元素属性包含 class="total" 时，为“简约风格”下包括子菜单的根菜单；
+4、当li元素属性包含 class="noRight" 时，为常规显示菜单选项，不会产生权限限制；
+5、a名称中不能出现系统默认的分隔符"|"，li元素下一个ul表示其子元素；
+6、当需要直接操作mysql表时，使用abc.php模板，在菜单链接处输入：data-href="abc.php?tbl=jc_xm"；
+7、本菜单经过格式的优化后，可支持无限级子菜单功能，但为了保持界面美观，建议只使用到三级子菜单；
+-->
+<script src="js/menu.js" type="text/javascript"></script>
+<ul id="mymenu">
+	<li id="01"><img src="picture/menu/16.png"><a data-href="V_1.php" data-title="会计凭证录入">会计凭证</a></li>
+	<li id="03"><img src="picture/menu/3.png"><a data-href="Vbook.php" data-title="会计凭证序时账簿">序时账簿</a></li>
+	<li id="05" class="hide"><img src="picture/menu/3.png"><a data-href="#" data-title="隐式菜单：开放查阅">开放查阅</a></li>
+	<li id="07"><img src="picture/menu/4.png"><a data-href="Vbook_kmyrb.php" data-title="会计科目余额表">科目账表</a></li>
+	<li id="09"><img src="picture/menu/17.png"><a data-href="Vbook_xmyrb.php" data-title="核算项目余额表">项目账表</a></li>
+	<li id="11"><img src="picture/menu/19.png"><a data-href="account.php" data-title="会计科目管理">会计科目</a></li>
+	<li id="13" class="total"><img src="picture/plus.png"><a>基础资料</a></li>
+	<ul>
+		<li id="13-01"><img src="picture/menu/2.png"><a data-href="jc_a.php?jc_tbl=现金流量" data-title="基础资料：现金流量">现金流量</a></li>
+		<li id="13-03"><img src="picture/menu/5.png"><a data-href="jc_a.php?jc_tbl=客户" data-title="基础资料：客户">客户</a></li>
+		<li id="13-05"><img src="picture/menu/1.png"><a data-href="jc_a.php?jc_tbl=个人" data-title="基础资料：个人">个人</a></li>
+		<li id="13-07"><img src="picture/menu/8.png"><a data-href="jc_a.php?jc_tbl=存货" data-title="基础资料：存货">存货</a></li>
+		<li id="13-09"><img src="picture/menu/20.png"><a data-href="jc_a.php?jc_tbl=供应商" data-title="基础资料：供应商">供应商</a></li>
+		<li id="13-11"><img src="picture/menu/21.png"><a data-href="jc_a.php?jc_tbl=部门" data-title="基础资料：部门">部门</a></li>
+		<li id="13-13"><img src="picture/menu/25.png"><a data-href="jc_a.php?jc_tbl=核算项目" data-title="基础资料：核算项目">核算项目</a></li>
+	</ul>
+	<li id="15" class="total"><img src="picture/plus.png"><a>高级功能</a></li>
+	<ul>
+		<li id="15-01"><img src="picture/menu/13.png"><a data-href="VbookPrint.php" data-title="高级功能：凭证打印">凭证打印</a></li>
+		<li id="15-03"><img src="picture/menu/18.png"><a data-href="fp.php" data-title="高级功能：发票管理">发票管理</a></li>
+		<li id="15-05"><img src="picture/menu/10.png"><a data-href="cost.php" data-title="高级功能：成本计算">成本计算</a></li>
+		<li id="15-07"><img src="picture/menu/6.png"><a data-href="report1.php" data-title="高级功能：财务报表">财务报表</a></li>
+		<li id="15-09"><img src="picture/menu/28.png"><a data-href="year1.php" data-title="高级功能：年度结转">年度结转</a></li>
+	</ul>
+	<li id="17" class="total"><img src="picture/plus.png"><a>系统管理</a></li>
+	<ul>
+		<li id="17-01"><img src="picture/menu/s1.png"><a data-href="sys_db.php" data-title="系统管理：账套管理">账套管理</a></li>
+		<li id="17-03"><img src="picture/menu/s2.png"><a data-href="sys_group.php" data-title="系统管理：用户分组及权限设置">用户分组</a></li>
+		<li id="17-05"><img src="picture/menu/s3.png"><a data-href="sys_user.php" data-title="系统管理：用户数据维护">用户管理</a></li>
+		<li id="17-07"><img src="picture/menu/s5.png"><a data-href="sys_mysql.php" data-title="系统管理：导出EXCEL数据">导出数据</a></li>
+	</ul>
+	<li class="noRight"><img src="picture/menu/s7.png"><a data-href="sys_changePWD.php" data-title="设置当前用户登录密码">密码修改</a></li>
+	<!--
+	本注释内的代码为测试新功能的代码
+	<li id="13-88"><img src="picture/menu/25.png"><a data-href="abc.php?tbl=jc_xm" data-title="核算项目">核算项目</a></li>
+	<li id="13-99" class="noRight"><img src="picture/menu/4.png"><a data-href="abc_sheet.php" data-title="表格测试">表格测试</a></li>
+	-->
+</ul>

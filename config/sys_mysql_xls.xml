@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--
+需要进行数据导入导出数据表中文名称和实际表名称；
+name:数据表中文名称，id:数据表实际名称；
+-->
+<tablexls>
+  <sub>
+    <id>v1</id>
+    <name>序时记录</name>
+  </sub>
+  <sub>
+    <id>v_chin</id>
+    <name>入库记录</name>
+  </sub>
+  <sub>
+    <id>v_chout</id>
+    <name>出库记录</name>
+  </sub>
+	<sub>
+		<id>account</id>
+		<name>会计科目</name>
+	</sub>
+	<sub>
+		<id>jc_xjll</id>
+		<name>现金流量</name>
+	</sub>
+	<sub>
+		<id>jc_kh</id>
+		<name>客户</name>
+	</sub>
+	<sub>
+		<id>jc_gr</id>
+		<name>个人</name>
+	</sub>
+	<sub>
+		<id>jc_ch</id>
+		<name>存货</name>
+	</sub>
+	<sub>
+		<id>jc_gys</id>
+		<name>供应商</name>
+	</sub>
+	<sub>
+		<id>jc_bm</id>
+		<name>部门</name>
+	</sub>
+	<sub>
+		<id>jc_xm</id>
+		<name>核算项目</name>
+	</sub>
+</tablexls>

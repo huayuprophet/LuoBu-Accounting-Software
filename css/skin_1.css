@@ -1,0 +1,677 @@
+@charset "utf-8";
+/*全页通用样式*/
+body{
+	margin:0;
+	padding:0;
+	font-family:serif,SimSun;
+	font-size:18px;
+	overflow:hidden;
+}
+table{
+	border-collapse:collapse;
+}
+input{
+	font-size:18px;
+	height:30px;
+	width:auto;
+	border:1px gray solid;
+	border-radius:5px 5px 5px 5px;
+}
+input[type="checkbox"]{
+	width:16px;
+	height:16px;
+}
+input[type="radio"]{
+	width:16px;
+	height:16px;
+}
+input[type="text"]:focus{
+	background-color:yellow;
+}
+input[type="date"]:focus{
+	background-color:yellow;
+}
+input[type="number"]:focus{
+	background-color:yellow;
+}
+input[type="password"]:focus{
+	background-color:yellow;
+}
+input[type="file"]{
+	border:1px solid black;
+}
+input[type="file"]:focus{
+	background-color:yellow;
+}
+textarea{
+	font-size:18px;	
+	height:auto;
+	width:auto;
+	white-space:pre-line;
+}
+textarea:focus{
+	background-color:yellow;
+}
+select{
+	font-size:18px;
+	height:28px;
+	width:auto;
+	border:1px gray solid;
+	border-radius:5px 5px 5px 5px;
+}
+select:focus{
+	background-color:yellow;
+}
+img{
+	border:none;
+}
+a{
+	text-decoration:none;
+	color:blue;
+	font-weight:bold;
+}
+a:link {
+	color:blue;
+	text-decoration:none;
+}
+a:visited {
+	color:blue;
+}
+a:hover{
+	color:red;
+	font-weight:bold;
+}
+a:hover img{
+	-webkit-transform:scale(1.3,1.3);
+	-moz-transform:scale(1.3,1.3);
+	-transform:scale(1.3,1.3);
+}
+/*自定义下划线样式*/
+u{
+	text-decoration:none;
+	padding-bottom:1px;
+    border-bottom:1px solid black;
+}
+/*自定义提示信息文字样式*/
+.info{
+	font-size:20px;
+	font-weight:bold;
+	margin:0px 0px 0px 5px;
+}
+/*元素的隐藏*/
+.hide{
+	display:none;
+}
+/*框架布局样式*/
+#header{
+	width100%;
+	height:80px;
+	border-bottom:1px solid gray;
+	background-image:url(../picture/header_0.jpg),url(../picture/header_1.jpg);
+	background-repeat: no-repeat,repeat;  
+}
+#contents{
+	width:100%;
+	height:auto;
+}
+#footer{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	height:40px;
+	border-top:1px solid gray;
+	background:white;
+	color:black;
+	line-height:40px;
+	padding:0px 7px 0px 7px;
+}
+#footerinformation{
+	float:left;
+}
+#footerskin{
+	float:right;
+	margin:6px 14px 0px 0px;
+}
+#header a{
+	cursor:pointer;
+}
+#syslogo{
+	margin:5px 0px 0px 15px;
+	float:left;
+	width:68px; 
+	height:68px; 
+	border:1px #eeccff solid; 
+	-moz-border-radius:34px;
+    -webkit-border-radius:34px;
+    border-radius:34px; 
+}
+#systitle{
+	margin:20px 0px 0px 10px;
+	float:left;
+	font-size:35;
+}
+#sysbutton{
+	margin:22px 10px 0px 0px;
+	float:right;
+}
+#leftHand{
+	float:left;
+	width:217px;
+	height:auto;
+	overflow-y:scroll;
+	background: url(../picture/header_2.jpg) repeat; 
+}
+#leftHand1{
+	position:absolute;
+	float:left;
+	height:20px;
+	margin:0;
+	background-color:#E0E0E0;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:clip;
+	-moz-box-shadow: 3px 3px 3px #ADADAD; /* 老的 Firefox */
+	box-shadow: 3px 3px 3px #ADADAD;
+}
+#leftHand1>img{
+	float:right;
+	margin:2px 4px 0px 0px;
+	cursor:pointer;
+}
+#splitLine{
+	float:left;
+	width:9px;
+	height:auto;
+	cursor:w-resize;
+	display: table-cell;
+	vertical-align: middle;
+	background:#CCCCCC;
+}
+#splitLine img{
+	margin:auto;
+	margin:0px 2px 0px 2px;
+	cursor:pointer;
+	background:#CCCCCC;
+    top:45%;
+    display:block;
+    position:relative;        
+}
+#rightHand{
+	width:auto;
+	height:auto;
+	overflow-x:scroll;
+}
+#rightHand > div{
+	margin:40px 5px 0px 5px;
+}
+/*
+rightHand 页面按钮与内容样式：
+access1：表示内容页面的一排按钮控件样式；
+access2：表示内容页面数据展标页面样式；
+*/
+.access1{
+	position:absolute;
+	width:100%;
+	height:40px;
+	line-height:40px;
+	background: url(../picture/header_2.jpg) repeat; 
+	margin:-7px 0px 0px -5px;
+	padding:2px 5px 0px 5px;
+	-moz-box-shadow: 3px 3px 3px #ADADAD; /* 老的 Firefox */
+	box-shadow: 3px 3px 3px #ADADAD;
+}
+.access2{
+	float:left;
+	margin:47px 0px 0px 0px;
+}
+/*树型菜单*/
+#mymenu{
+	margin-top:30px;
+	margin-left:-30px;
+}
+#mymenu{
+	height:100%;
+	line-height:30px;
+}
+#mymenu li img{
+	margin:0;
+	padding:0;
+	width:16px;
+	height:16px;
+}
+#mymenu li{
+	list-style-type:none;
+}
+#mymenu li a{
+	color:black;
+	margin-left:8px;
+}
+#mymenu ul li:not(:last-child) {
+	padding: 0;
+	margin-left: -30px;
+	text-indent: 30px;
+	background: url(../picture/line_2.png) no-repeat left center;
+	background-size: 29px 29px;
+}
+#mymenu ul li:last-child {
+	padding: 0;
+	margin-left: -30px;
+	text-indent: 30px;
+	background: url(../picture/line_4.png) no-repeat left center;
+	background-size: 29px 29px;
+}
+#mymenu li:hover {
+	cursor: pointer;
+	font-weight: bold;
+	background-color: yellow;
+}
+#mymenu li:hover a {
+	color: red;
+	cursor: pointer;
+	font-weight: bold;
+}
+#mymenu ul li:hover {
+	cursor: pointer;
+	background-color: yellow;
+}
+/*树型导航*/
+.mytree{
+	margin:0;
+	padding:0;
+}
+.mytree li{
+	list-style-type:none;
+}
+.mytree li img:nth-child(1){
+	margin:0;
+	padding:0;
+	width:12px;
+	height:14px;
+}
+.mytree li img:nth-child(2){
+	margin:0;
+	padding:0;
+	width:16px;
+	height:14px;
+}
+.mytree ul li:not(:last-child) {
+	padding: 0;
+	margin-left: -30px;
+	text-indent: 30px;
+	background: url(../picture/line_2.png) repeat-y left center;
+	background-size: 29px 29px;
+}
+
+.mytree ul li:last-child {
+	padding: 0;
+	margin-left: -30px;
+	text-indent: 30px;
+	background: url(../picture/line_4.png) no-repeat left center;
+	background-size: 29px 29px;
+}
+.mytree li:hover{
+	cursor:pointer;
+	font-weight:bold;
+	background-color:yellow;
+}
+/*网页选项卡*/
+#tabMenu{
+	margin:0px 0px 0px 0px;
+	width:100%;
+	padding:0px;
+	position:absolute;
+	float:left;
+	background-color:#F0F0F0;
+	-moz-box-shadow: 3px 3px 3px #ADADAD; /* 老的 Firefox */
+	box-shadow: 3px 3px 3px #ADADAD;
+}
+#tabMenu li{
+	margin:0px 0px 0px 5px;
+	padding:5px;
+	float:left;
+	list-style-type:none;
+	height:20px;
+	width:auto;
+	color:black;
+	font-weight:blod;
+	text-align:center;
+	background-color:#B8B8B8;
+	border:1px gray solid;
+	border-radius:5px 5px 5px 5px;
+}
+#tabMenu li:hover{
+	cursor:pointer;
+}
+#tabMenu li div{
+	float:right;
+	width:15px;
+	height:15px;
+	background:url(../picture/cancel_1.png) no-repeat center;
+}
+#tabMenu li div:hover{
+	cursor:pointer;
+	background:url(../picture/cancel_2.png) no-repeat center;
+}
+/*通用表格样式*/
+.mytable{
+	text-align:left;
+	border:solid #C0C0C0;
+	border-collapse:collapse;
+	border-width:0px 0px 0px 0px;
+}
+.mytable thead tr{
+	height:33px;
+	font-weight:bold;
+	background:url(../picture/tablethead.jpg) repeat;
+}
+.mytable tfoot tr{
+	height:30px;
+	font-weight:bold;
+	background:url(../picture/tabletfoot.jpg) repeat;
+}
+.mytable tbody tr:hover{
+	background:yellow;
+}
+.mytable td{
+	border:solid #C0C0C0;
+	border-width:1px 1px 1px 1px;
+	padding:0px 8px 0px 8px;
+	height:30px;
+}
+.tablesorter-default .header,
+.tablesorter-default .tablesorter-header {
+	background-image: url(../picture/blackunsorted.jpg);
+	background-position: center right;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	white-space: normal;
+	padding: 4px 20px 4px 4px;
+}
+.tablesorter-default thead .headerSortUp,
+.tablesorter-default thead .tablesorter-headerSortUp,
+.tablesorter-default thead .tablesorter-headerAsc {
+	background-image: url(../picture/blackasc.jpg);
+	border-bottom: #000 2px solid;
+}
+.tablesorter-default thead .headerSortDown,
+.tablesorter-default thead .tablesorter-headerSortDown,
+.tablesorter-default thead .tablesorter-headerDesc {
+	background-image: url(../picture/blackdesc.jpg);
+	border-bottom: #000 2px solid;
+}
+.tablesorter-default thead .sorter-false {
+	background-image: none;
+	cursor: default;
+	padding: 4px;
+}
+/*表格中如含用输入控件，输入控件的样式，class="sheet" */
+.sheet tr td{
+	border:1px solid #C0C0C0;
+	padding:0px 0px 0px 0px;
+	vertical-align:top;
+}
+.sheet tr td input{
+	width:100%;
+	height:100%;
+	outline:none;
+	border:none;
+}
+.sheet tr td textarea{
+	width:100%;
+	height:100%;
+	outline:none;
+	border:none;
+}
+.odd{
+	background:#cceeff;
+}
+.even{
+	background:white;
+}
+.selected{
+	background-color:yellow;
+}
+.clicked{
+	background-color:#FFFF99;
+}
+.tableFixed{                 /*表格样式中字符不换行，多出字符使用省略号代替代码*/
+	width:1000px;
+	table-layout:fixed;
+}
+.tdEllipsis{
+	white-space:nowrap;      /*设置内容抵达容器边界会不会转到下一行*/
+	overflow:hidden;         /*不显示超过对象尺寸的内容（这个绝对不能少）,也就是说设置td里面的数据无论有多少，都不会换行*/
+	text-overflow:ellipsis;  /*将被隐藏的那部分用省略号代替。*/
+}
+/*通用弹出窗口样式*/
+#popbox .popupbg{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:white;
+	z-index:1001;
+	-moz-opacity:0.5;
+	opacity:.50;
+	filter:alpha(opacity=50);
+}
+#popbox .popup{
+	display:none;
+	position:absolute;
+	padding:8px;
+	border:3px green solid;
+	background-color:#CCFFFF;
+	z-index:1002;
+	border-radius:8px 8px 8px 8px;
+}
+#popbox .popuptitle{
+	margin:-8px -8px 0px -8px;
+    padding:8px;
+	color:white;
+	font-weight:bold;
+	width:100%;
+	height:18px;
+	line-height:18px;
+	background-color:green;
+	text-align:left;
+	border:0px green solid;
+	border-radius:4px 4px 0px 0px;
+}
+#popbox .popupclose{
+	margin:-26px 4px 0px 0px;
+	float:right;
+	width:15px;
+	height:15px;
+	background:url(../picture/cancel_1.png) no-repeat center;
+}
+#popbox .popupclose:hover{
+	background:url(../picture/cancel_2.png) no-repeat center;
+}
+#popbox .popupbox{
+	width:100%;
+	height:90%;
+	overflow-x:auto;
+	overflow-y:auto;
+}
+/*搜索建议框样式*/
+#suggestbox{
+	display:none;
+	position:absolute;
+	padding:1px;
+	margin-top:5px;
+	border:3px #C0C0C0 solid;
+	background-color:white;
+	z-index:2001;
+	overflow:auto;
+	height:300px;
+	border-radius:8px 8px 8px 8px;
+}
+.suggestBoxStyle{
+	background:url(../picture/find.png) no-repeat right;
+	background-color:white;
+}
+/*以下为会计软件特定样式*/
+/*会计凭证项目录入弹出窗口样式*/
+#bg{
+	display:none;
+	position:absolute;
+	top:0%;
+	left:0%;
+	width:100%;
+	height:100%;
+	background-color:white;
+	z-index:1001;
+	-moz-opacity:0.4;
+	opacity:.40;
+	filter:alpha(opacity=40);
+}
+#showForm{
+	display:none;
+	position:absolute;
+	padding:8px;
+	top:25%;
+	left:25%;
+	width:50%;
+	height:60%;
+	background-color:#CCFFFF;
+	border:3px green solid;
+	z-index:1002;
+	border-radius:8px 8px 8px 8px;
+}
+#showFormTitle{
+	margin:-11px -8px 0px -8px;
+    padding:8px;
+	width:100%;
+	height:30px;
+	line-height:30px;  
+	color:white;
+	font-weight:bold;
+	background-color:green;
+	border-radius:8px 8px 0px 0px;
+}
+#showFormContent{
+	color:black;
+	font-weight:bold;
+	padding:8px;
+}
+/*会计凭证界面样式*/
+#tbl1_V1{
+	text-align:left;
+	border-collapse:collapse;
+}
+#tbl1_V1 td{
+	border:1px solid #C0C0C0;
+}
+#tbl1_V1 .headlines td{
+	background-color:#cceeff;
+	text-align:center;
+	font-weight:bold;
+}
+#tbl1_V1 tr>td{
+	vertical-align:top;
+}
+#tbl1_V1 tr:not(:first-child) td input{
+	outline:none;
+	border:none;
+}
+#tbl1_V1 tr:not(:first-child) td textarea{
+	outline:none;
+	border:none;
+}
+#tbl2_V1{
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+}
+#tbl2_V1 tr>td{
+	vertical-align:middle;
+}
+#tbl2_V1 tr:nth-child(odd){
+	background:#cceeff;
+}
+#tbl2_V1 tr:nth-child(even){
+	background:white;
+}
+#tbl2_V1 tr:hover{
+	background:yellow;
+}
+#tbl3_V1 tr:nth-child(odd){
+	background:#cceeff;
+}
+#tbl3_V1 tr:nth-child(even){
+	background:white;
+}
+#tbl3_V1 tr:hover{
+	background:yellow;
+}
+/*会计凭证打印样式*/
+#printV_VbookPrint{
+	width:850px;
+}
+#printV_VbookPrint .myVprint{
+	width:800px;
+	border-collapse:collapse;
+}
+#printV_VbookPrint .myVprint .trV_Print td{
+	border:1px solid #000000;
+	height:55px;
+}
+#printV_VbookPrint .myVprint .tv td{
+	height:25px;
+}
+#printV_VbookPrint .myVprint .trV_Print td:nth-child(1){
+	width:40px;
+	font-size:16px;
+}
+#printV_VbookPrint .myVprint .trV_Print td:nth-child(2){
+	width:130px;
+	font-size:16px;
+}
+#printV_VbookPrint .myVprint .trV_Print td:nth-child(3){
+	width:410px;
+	font-size:16px;
+}
+#printV_VbookPrint .myVprint .trV_Print td:nth-child(4){
+	width:110px;
+	font-size:16px;
+}
+#printV_VbookPrint .myVprint .trV_Print td:nth-child(5){
+	width:110px;
+	font-size:16px;
+}
+/*销售出库打印样式*/
+#printDJ_VbookPrint_1{
+	width:800px;
+}
+#printDJ_VbookPrint_1 .myVprint_VbookPrint_1{
+	width:800px;
+	border-collapse:collapse;
+}
+#printDJ_VbookPrint_1 .myVprint_VbookPrint_1 .trV_Print1 td{
+	font-size:14px;
+	border:1px solid #000000;
+	height:55px;
+}
+#printDJ_VbookPrint_1 .myVprint_VbookPrint_1 .tv1 td{
+	height:25px;
+}
+#printDJ_VbookPrint_1 .myVprint_VbookPrint_1 .trV_Print1 td:nth-child(1){
+	width:40px;
+}
+#printDJ_VbookPrint_1 .myVprint_VbookPrint_1 .trV_Print1 td:nth-child(2){
+	width:410px;
+}
+#printDJ_VbookPrint_1 .myVprint_VbookPrint_1 .trV_Print1 td:nth-child(3){
+	width:60px;
+}
+#printDJ_VbookPrint_1 .myVprint_VbookPrint_1 .trV_Print1 td:nth-child(4){
+	width:110px;
+}
+#printDJ_VbookPrint_1 .myVprint_VbookPrint_1 .trV_Print1 td:nth-child(5){
+	width:110px;
+}
+#printDJ_VbookPrint_1 .myVprint_VbookPrint_1 .trV_Print1 td:nth-child(6){
+	width:210px;
+}
