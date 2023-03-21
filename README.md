@@ -1,23 +1,46 @@
-# 恩格会计软件
+# 罗布会计软件
 
-#### 介绍
-免费开源的财务会计软件，采用php+mysql环境。B/S架构。
+####简述
+罗布会计软件，是一个采用php+mysql环境开发的**免费开源**的会计软件。
+##### 注意：
+1. 适用于部署到windows平台，linux等其他平台部署后可能有未知问题。
+2. 参阅下文**一键安装**指南，否则必须自行部署php+mysql环境。
+
+##### 软件特点：
+- 本软件为免费网络共享软件，适用于中小企业会计核算。
+- 软件提供了标准的财务会计序时账簿、总账、明细账、辅助项目、存货核算等功能。
+- 软件框架提供了对数据库的管理，用户角色权限的设置，数据的批量导出等功能。
+- PHP版采用了javascript + ajax，jquery，mysql存储过程及函数，用户体验极佳。
+##### 优势：
+- 安全、高效、自由
+- 开源、免费，软件运作机制公开透明，有强大的开源社区技术支撑。
+- B/S架构，轻松实现远程多端多用户登录操作。
+- 代码条理清晰、模块化强大。用户可根据自身需求二次开发。
 
 #### 软件架构
-软件架构说明
-
+- 软件采用B/S架构，既可以本地运行，也可以多端协作。不但可以企业内网私有化部署，也可以公开部署到云服务器（不推荐）。
+- 路由代码结构模块化，方便二次开发。
+- 前后端合一，资源负载占用低。
 
 #### 安装教程
+##### 自动安装：
+#### [去官网下载一键安装包——罗布会计软件+集成环境](http://www.accsoft2008.com/ "点这里一键安装罗布会计软件+集成环境")
+##### 手动安装：
+1. 将项目git clone到php+mysql环境根目录，须windows系统。
+2. 修改数据库信息。（路径`\config.inc.php`的`[pwb]`字段是数据库密码配置，默认密码为`12345678`）
+3. 然后浏览器访问`http://localhost/index.php`链接即可。需域名访问则在web服务器配置好host name就ok。
+4. 本软件不需要配置伪静态。
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
+注意：本软件权限管理比较开放，增删账套时不需要后端初始化database密码，而是用户键入数据库密码登录。所以用户角色权限管理和SSL证书高级加密尤为重要，且企业生产场景下不建议公开部署，以防会计信息泄露、丢失、注入；或者用户可以自行对以下路径文件进行二次开发，覆写敏感内容。
+```
+\config\database.php
+\config.inc.php
+\config\databaseCreateSubmit.php
+\config\database[*].php
+......
+```
 #### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+Documentation使用文档暂缺
 
 #### 参与贡献
 
@@ -25,13 +48,7 @@
 2.  新建 Feat_xxx 分支
 3.  提交代码
 4.  新建 Pull Request
+5.  星标本项目
 
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+#### 软件技巧
+暂略
