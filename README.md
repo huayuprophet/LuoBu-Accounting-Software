@@ -33,17 +33,19 @@
 
 #### 自动安装：
 
-### [去官网下载一键安装包——罗布会计软件+集成环境](http://www.accsoft2008.com/ "点这里一键安装罗布会计软件+集成环境")
+### [去官网下载一键安装包——罗布会计软件+集成环境](http://www.accsoft2008.com/ "点这里一键安装Windows罗布会计软件+PHP+Mysql集成环境")
 
 #### 手动安装：
 
-1. 安装好php+mysql环境，并且将项目git clone到站点根目录，须Windows xp以上、推荐PHP7以上、Mysql5.7以上环境。
+1. 安装好php+mysql环境，并且将项目git clone到站点根目录，需要Windows 7以上、推荐PHP7.0以上、Mysql5.7.17以上环境。
 2. 修改数据库信息，路径`\config.inc.php`的`[pwb]`字段是数据库密码配置，默认密码为`12345678`）
 3. 然后浏览器访问`http://localhost/index.html`链接即可。需用域名访问则在web服务器配置上host name。
 4. 可将phpMyAdmin部署到`\phpMyAdmin`目录，若不需要软件内管理数据库可略过此步。
 5. 本软件不需要配置伪静态。
+6. 如果只能从非Windows平台安装本软件，则推荐Linux-x86_64平台，可以直接使用。若需要从其他平台安装，则需要将对应平台的`\Mysql5.7.17\bin\mysql`和`\Mysql5.7.17\bin\mysqldump`文件复制替换到项目`\config`目录。[Mysql5.7.17下载](https://downloads.mysql.com/archives/community/?tpl=version&os=3&version=5.7.17&osva=)
 
 - 注意：本软件权限管理比较开放，增删账套时不需要后端初始化database密码，而是用户键入数据库密码登录。所以用户角色权限管理和SSL证书高级加密尤为重要，且企业生产场景下不建议公开部署，以防会计信息泄露、丢失、注入；或者用户可以自行对以下路径文件进行二次开发，覆写敏感内容。
+
 ```
 \config.inc.php
 \config\database.php
