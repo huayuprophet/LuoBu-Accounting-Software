@@ -37,7 +37,7 @@
 
 #### 手动安装：
 
-1. 安装好php+mysql环境，并且将项目git clone到站点根目录，需要Windows7 x64以上、推荐PHP7.0以上、Mysql5.7.17以上环境。
+1. 安装好php+mysql环境，并且将项目git clone到站点根目录，**环境要求：需要Windows8 x64以上、PHP7.2+、Mysql8+环境**。
 2. 修改数据库信息，路径`\config.inc.php`的`[pwb]`字段是数据库密码配置，默认密码为`12345678`）
 3. 然后浏览器访问`http://localhost/index.html`链接即可。需用域名访问则在web服务器配置上host name。
 4. 可将phpMyAdmin部署到`\phpMyAdmin`目录,或手动修改`\phpMyAdmin.php`的路径配置，若不需要软件内管理数据库可略过此步。
@@ -57,7 +57,7 @@
 
 ### 使用说明
 
-Documentation使用文档暂缺，见[readme.pdf]
+Documentation使用文档暂缺，见[readme.pdf]()
 
 新建的账套，初始账号1001，初始密码123456
 
@@ -67,8 +67,9 @@ Documentation使用文档暂缺，见[readme.pdf]
 2. 新建 Feat_xxx 分支
 3. 提交代码
 4. 新建 Pull Request
-5. 星标本项目
+5. 星标本仓库
 
 ### 软件技巧
 
 暂略
+
