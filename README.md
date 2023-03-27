@@ -43,7 +43,8 @@
 4. 可将phpMyAdmin部署到`\phpMyAdmin`目录,或手动修改`\phpMyAdmin.php`的路径配置，若不需要软件内管理数据库可略过此步。
 5. 本软件不需要配置伪静态。
 6. 自行安装的集成环境，可能需要手动解禁exec函数。以宝塔面板为例：进入PHP设置->禁用函数->删除`exec`。并且IP地址注册为主机名、尽量关闭跨站攻击防御。
-7. 如果只能从非Windows平台安装本软件，则推荐Linux-x86_64平台，稍作调整即可直接使用：调整数据临时目录为相对路径，打开配置文件`\config\conf.php`修改`fileName0`变量即可，建议改为`$fileName0='../AccSoft_Data/';`，如果新建账套时出现错误，则尝试将项目`\config`目录下的`mysql`和`mysqldump`文件拷贝到`/usr/bin/`并重启服务器。若需要Windows/Linux以外的平台安装，则必须安装对应平台的Mysql Community Client程序。[Mysql历史版本下载页](https://downloads.mysql.com/archives/community/)
+7. 如果只能从非Windows平台安装本软件，则推荐Linux-x86_64平台，稍作调整即可直接使用：调整数据临时目录为相对路径，打开配置文件`\config\conf.php`修改`fileName0`变量即可，建议改为`$fileName0='../AccSoft_Data/';`，如果新建账套时出现错误，则尝试安装Mysql Community Client程序（Client版本尽量在5.7.17及以上）[Mysql历史版本下载页](https://downloads.mysql.com/archives/community/)，安装无效可尝试将项目`\config`目录下的`mysql`和`mysqldump`文件拷贝到`/usr/bin/`并重启服务器。若需要Windows/Linux以外的平台安装，则安装的Mysql Community Client程序必须适用于您的系统平台。
+8. 非Windows平台下，账套或其他文件的导出或有问题，但未做测试。有测试的朋友可帮忙将错误提示发送到issue页面反馈给我谢谢。
 
 - 注意：本软件权限管理比较开放，增删账套时不需要后端初始化database密码，而是用户键入数据库密码登录，容易受中间人攻击技术劫持。所以用户角色权限管理和SSL证书高级加密尤为重要，且企业生产场景下不建议公开部署，以防会计信息泄露、丢失、注入；或者用户可以自行对以下路径文件进行二次开发，覆写敏感内容。
 
@@ -58,7 +59,9 @@
 ### 使用说明
 
 Documentation使用文档暂缺，见[readme.pdf]()。
+
 新建的账套，初始账号1001，初始密码123456。
+
 删除重建的账套可能提示“文件夹已存在”错误，删除临时文件夹`D:/AccSoft_Data/`即可解决。
 
 ### 更新日志
@@ -76,4 +79,5 @@ Documentation使用文档暂缺，见[readme.pdf]()。
 ### 软件技巧
 
 暂略
+
 
