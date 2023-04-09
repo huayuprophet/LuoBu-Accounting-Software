@@ -1,12 +1,16 @@
-# 通用财务系统软件
+# 通用财务系统软件👍🚀️🚀️
 
 ### 简述
 
 曾用名：罗布会计软件。本软件是一个采用php+mysql环境开发的**免费开源**的中小会计账务软件。
 
-<center>[官方网站](http://www.accsoft2008.com/) | [加qq群](https://shang.qq.com/wpa/qunwpa?idkey=e42a8a107e989ef014be2938e815b420fd3dc64c47d3cda351190b0227129e5b)</center>
+喜欢项目请点击右上角的“star”以为星标。
 
-进群请从验证填写你的来源：如“来自gitee开源仓库”。
+[官方网站](http://www.accsoft2008.com/) | [官方Q群](https://shang.qq.com/wpa/qunwpa?idkey=e42a8a107e989ef014be2938e815b420fd3dc64c47d3cda351190b0227129e5b)
+
+提交反馈：点击顶部`issue`导航按钮、或入Q群反馈。
+
+申请进群时请填写你的来源：如“来自gitee开源仓库”。
 
 #### 注意：
 
@@ -39,6 +43,8 @@
 
 ##### [去官网下载一键安装包——罗布会计软件+集成环境](http://www.accsoft2008.com/ "点这里一键安装Windows罗布会计软件+PHP+Mysql集成环境")
 
+***
+
 #### 手动安装：
 
 1. 安装好php+mysql环境，并且将项目git clone到站点根目录，**环境要求：需要Windows8 x64以上、PHP7.4+、Mysql8+环境**。
@@ -70,7 +76,14 @@ Documentation使用文档暂缺，见仓库中[readme.pdf](https://gitee.com/hua
 
 ### 更新日志
 
-2023/03/25 为火狐浏览器提供兼容-修复布局错误
+打钩项目->已解决，未打钩项目->已发现但待解决。
+
+- [x] 为火狐浏览器提供兼容-修复布局错误    2023/03/25
+- [x] 为Linux提供初步兼容，需根据**手动安装**教程手动适配    2023/03/21
+- [ ] 修复当数据库非本地回环时，出现建删账套错误的bug
+- [ ] 弃用mysql/mysqldump shell方案，使用php执行sql语句方法平替、
+  
+其他暂未发现的问题，请进qq群或issue提交到管理员谢谢。
 
 ### 参与贡献
 
