@@ -1,13 +1,17 @@
-# 罗布会计软件
+# 通用财务系统软件
 
 ### 简述
 
-罗布会计软件，是一个采用php+mysql环境开发的**免费开源**的会计软件。
+曾用名：罗布会计软件。本软件是一个采用php+mysql环境开发的**免费开源**的中小会计账务软件。
+
+<center>[官方网站](http://www.accsoft2008.com/) | [加qq群](https://shang.qq.com/wpa/qunwpa?idkey=e42a8a107e989ef014be2938e815b420fd3dc64c47d3cda351190b0227129e5b)</center>
+
+进群请从验证填写你的来源：如“来自gitee开源仓库”。
 
 #### 注意：
 
 1. 适用于部署到windows平台，linux等其他平台部署后可能有未知问题。
-2. 参阅下文**一键安装**指南，否则必须自行部署php+mysql环境。
+2. 参阅下文**Windows自动安装**指南，否则必须自行部署php+mysql环境。
 
 #### 软件特点：
 
@@ -31,7 +35,7 @@
 
 ### 安装教程
 
-#### 自动安装：
+#### Windows自动安装：
 
 ##### [去官网下载一键安装包——罗布会计软件+集成环境](http://www.accsoft2008.com/ "点这里一键安装Windows罗布会计软件+PHP+Mysql集成环境")
 
@@ -58,7 +62,7 @@
 
 ### 使用说明
 
-Documentation使用文档暂缺，见[readme.pdf]()。
+Documentation使用文档暂缺，见仓库中[readme.pdf](https://gitee.com/hua_yutong/LuoBu-Accounting-Software/raw/master/readme.pdf)文件。
 
 新建的账套，初始账号1001，初始密码123456。
 
@@ -79,5 +83,3 @@ Documentation使用文档暂缺，见[readme.pdf]()。
 ### 软件技巧
 
 暂略
-
-
