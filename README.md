@@ -1,6 +1,3 @@
----
-theme: github
----
 # <p align="center">通用财务系统软件👍🚀️🚀️</p>
 
 ### 简述
@@ -10,6 +7,7 @@ theme: github
 喜欢项目请点击右上角的“star”以为星标。
 
 <p align="center"><a href="https://shang.qq.com/wpa/qunwpa?idkey=e42a8a107e989ef014be2938e815b420fd3dc64c47d3cda351190b0227129e5b"> 🐧QQ交流群</a></p>
+
 ![截图](src/a37b895a498b870bb99ca1fb292d056d.png)
 
 - 提交反馈：点击顶部`issue`导航按钮、或入Q群反馈。
